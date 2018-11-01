@@ -1,7 +1,7 @@
 ---
 # tasks file for OracleUserManagement
 
-- name: Cpoy the List of User to be add in Oracle 
+- name: Copy the List of User to be add in Oracle 
   template: 
     src: template/Oracle_Add_User.csv
     dest: /home/ec2-user/
