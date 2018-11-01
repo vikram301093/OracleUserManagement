@@ -1,13 +1,13 @@
----
+--
 # tasks file for OracleUserManagement
 
-- name: Copy the List of User to be Update(Change Password) in Oracle 
-  template: 
-    src: template/Oracle_Password_Change.csv
+- name: Copy the List of User to be Update(Change Password) in Oracle
+  template:
+    src: template/Oracle_User_Password_Change.csv
     dest: /home/ec2-user/
 
 - name: Copy the Oracle Add User Shell Script
-  template:  
+  template:
     src: template/Dynamic_Oracle_Password_Change.sh
     dest: /home/ec2-user/
 
